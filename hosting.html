@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Hosting Menggunakan cPanel</title>
+
+    <!-- all css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+		.logo {
+			color: black;
+			font-size: 35px;
+			letter-spacing: 1px;
+			cursor: pointer;
+		}
+		span{
+			color: #10B5BF;
+		}
+		.box {
+			width: auto;
+			height: 190px;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- navigation start -->
+	<nav class="navbar navbar-expand-lg sticky-top navbar-dark shadow-sm" style="background: #000000;">
+		<div class="container">
+			<img src="img/logo.png" style="max-height: 45px;">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="#about">About</a>
+					</li>
+					<li class="nav-item text">
+						<a class="nav-link text-white" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- navigation end -->
+
+	<!-- two side columns start -->
+	<section class="container">
+		<div class="container">
+			<div class="row">
+				<!-- left side -->
+				<div class="col-md-9 mt-5">
+					<!-- header start -->
+					<article class="container">
+						<header>
+							<h1>Cara Upload Web ke Hosting cPanel Melalui File Manager</h1>
+							<div>Nadila Aulya</div>
+							<div>Posted on: Nov 16, 2022 at 12:45 AM</div>
+							<br>
+							<!-- badge -->
+							<div>
+								<a href="#" class="badge text-bg-dark">technology</a>
+								<a href="#" class="badge text-bg-dark">coding</a>
+								<a href="#" class="badge text-bg-dark">hosting</a>
+								<a href="#" class="badge text-bg-dark">cyber</a>
+							</div>
+						</header>
+						<!-- post start -->
+						<section>
+							<figure class="figure">
+								<img src="img/cpanel.jpg" class="img-fluid">
+								<figcaption class="figure-caption">
+									<p>CPanel logo</p>
+									<p>Photo by: Nadila Aulya</p>
+								</figcaption>
+							</figure>
+							<div class="article">
+								<p>
+									Pada artikel ini saya akan membahas mengenai cara upload Web ke Hosting cPanel melalui file manager.
+									cPanel merupakan panel kontrol yang digunakan untuk melakukan pengaturan pada layanan web hosting. Tanpa cPanel,
+									pengaturan web hosting hanya bisa dilakukan melalui perintah teks. cPanel memudahkan pengguna untuk melakukan
+									berbagai
+									macam konfigurasi melalui tampilan user interface yang menarik.
+								</p>
+								<p>
+									cPanel biasanya dipasang pada Dedicated Server atau VPS yang menggunakan sistem operasi Linux, FreeBSD, dan
+									sejenisnya.
+									Aplikasi-aplikasi yang didukung cPanel meliputi Apache, PHP, mySQL, Postgres, Perl, Python, and BIND, dengan email
+									seperti POP3, IMAP, layanan-layanan SMTP.
+								</p>
+								<p>
+									Perlu diingat bahwa CPanel dan cPanel adalah berbeda pada pengertiannya. cPanel adalah brand yang menyediakan CPanel
+									(Control Panel). Jadi cPanel merupakan salah satu versi CPanel yang saat ini tersedia.
+								</p>
+								<p>
+									File Manager adalah fasilitas di dalam cPanel yang berfungsi untuk mengelola file website Anda di dalam hosting.
+									Anda
+									bisa mengedit, menghapus atau mengupload (mengunggah) file-file website Anda ke hosting melalui fitur ini. Pada
+									panduan
+									ini, kami akan memberikan cara upload web ke hosting cPanel melalui file manager.
+									Panduan ini bisa diterapkan bagi Anda yang memesan layanan Shared hosting, Unlimited hosting dan Cloud Hosting.
+									Mari kita simak cara upload web ke hosting melalui file manager.
+								</p>
+							</div>
+							<br>
+							<h3 class="logo">Apa Saja yang <span> Dipersiapkan?</span></h3>
+							<p>Sebelum melakukan upload file website ke hosting, Anda perlu menyiapkan beberapa hal berikut ini: </p>
+							<h4>File website</h4>
+							<p>
+								Jika sebelumnya Anda membuat website di localhost, maka Anda bisa melakukan compress folder websitenya terlebih dahulu.
+								Untuk localhost yang dibuat melalui XAMPP, file website bisa ditemukan pada drive C directory /xampp/htdocs.
+							</p>
+							<h4>Akses Login ke cPanel</h4>
+							<p>
+								Pastikan bahwa Anda telah memiliki layanan domain dan Hosting yang aktif. cPanel bisa diakses melalui namadomain/cpanel
+								atau bisa dilakukan melalui Clientzone.
+							</p>
+							<br>
+							<h3 class="logo">Upload Website ke Hosting <span>Melalui File Manager</span></h3>
+							<ol>
+								<li>
+									Login ke cPanel terlebih dahulu, untuk login cPanel dapat menambahkan <strong>/cpanel</strong> 
+									atau bisa menggunakan port 2083. Kemudian klik menu <strong>File Manager</strong>
+									, pada kolom <strong>Files.</strong>
+									<img src="img/tutor1.jpg" alt="" class="img-fluid">
+								</li>
+								<br>
+								<li>
+									Setelah masuk ke file manager, buka direktori 
+									<strong>public_html.</strong>
+									<img src="img/tutor2.jpg" alt="" class="img-fluid">
+								</li>
+								<br>
+								<li>
+									Klik <strong>Upload</strong> pada direktori public_html.
+									<img src="img/tutor3.jpg" alt="" class="img-fluid">
+								</li>
+								<br>
+								<li>
+									Upload file dengan klik tombol <strong>Select File</strong> 
+									atau pada <strong>drag file</strong> ke area yang tersedia.
+									<img src="img/tutor4.png" alt="" class="img-fluid">
+								</li>
+								<br>
+								<li>
+									Setelah proses upload selesai, kembali ke File Manager dan Anda akan melihat file yang diunggah ke direktori 
+									<strong>public_html</strong>. Klik kanan pada file tersebut, 
+									lalu pilih <strong>Extract</strong>.
+									<img src="img/tutor5.jpg" alt="" class="img-fluid">
+								</li>
+								<br>
+								<li>
+									Pastikan file tersebut diekstrak pada direktori 
+									<strong>public_html</strong> seperti yang terlihat, 
+									lalu klik tombol <strong>Extract File(s)</strong>.
+									<img src="img/tutor6.jpg" alt="" class="img-fluid">
+								</li>
+								<br>
+								<li>
+									Setelah selesai diekstrak, semua file akan dapat dilihat pada folder 
+									<strong>public_html</strong>.
+								</li>
+								<br>
+								<li>Website telah berhasil diupload dan dapat diakses melalui browser!</li>
+							</ol>
+							<br>
+						</section>
+						<!-- post end -->
+					</article>
+					<!-- header end -->
+				</div>
+
+				<div class="col-md-3 mt-5">
+					<div class="box"></div>
+					<!-- author start -->
+					<h2>About the Author</h2>
+					<div class="card" id="about">
+						<div class="card-body text-center">
+							<img src="img/me.png" alt="Figure image" class="img-fluid" style="max-width: 150px;">
+							<h5 class="card-title"><a href="mailto:halo@nadilaaulya.my.id" 
+								style="text-decoration: none; color: black;">Nadila Aulya Salsabila Mirdianti</a>
+							</h5>
+							<p class="card-text">
+								I am an active semester 1 college from the Electronics Engineering Polytechnic
+								Institute of Surabaya majoring in Diploma-III Informatics Engineering.
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card_body" align="center">
+							<div class="card-text">
+								<ul class="list-inline">
+									<li class="list-inline-item small">1 D3 IT A</li>
+									<li class="list-inline-item small">3122500002</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<br>
+					<!-- author end -->
+
+					<!-- post start -->
+					<h2>Another Article</h2>
+					<div class="list-group">
+						<a href="index.html" class="list-group-item list-group-item-action">
+							<div class="badge text-bg-secondary">About My Blog</div>
+							<h5>The Reason Why I create My Personal Blog</h5>
+							<p>Nadila Aulya (Nov 16, 2022 at 12:45 AM)</p>
+						</a>
+						<a href="java.html" class="list-group-item list-group-item-action">
+							<div class="badge text-bg-secondary">Coding</div>
+							<h5>Membuat Segitiga Bintang Javascript</h5>
+							<p>Nadila Aulya (Nov 16, 2022 at 7:11 AM)</p>
+						</a>
+						<a href="makalah.html" class="list-group-item list-group-item-action">
+							<div class="badge text-bg-secondary">Technology</div>
+							<h5>Dampak Teknologi Internet Pada Sektor Pertahanan dan Keamanan</h5>
+							<p>Nadila Aulya (Nov 16, 2022 at 7:11 AM)</p>
+						</a>
+					</div>
+					<br>
+					<!-- post end -->
+
+					<!-- tag cloud start -->
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Tag cloud</h5>
+							<a href="" class="badge text-bg-secondary">technology</a>
+							<a href="" class="badge text-bg-secondary">programming</a>
+							<a href="" class="badge text-bg-secondary">coding</a>
+							<a href="" class="badge text-bg-secondary">cyber</a>
+							<a href="" class="badge text-bg-secondary">hosting</a>
+							<a href="" class="badge text-bg-secondary">domain</a>
+							<a href="" class="badge text-bg-secondary">internet</a>
+							<a href="" class="badge text-bg-secondary">information</a>
+							<a href="" class="badge text-bg-secondary">shared hosting</a>
+							<a href="" class="badge text-bg-secondary">VPS hosting</a>
+							<a href="" class="badge text-bg-secondary">subdomain</a>
+							<a href="" class="badge text-bg-secondary">commuincation</a>
+						</div>
+					</div>
+					<br>
+					<!-- tag cloud end -->
+
+					<!-- about blog start -->
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">About this blog</h5>
+							<p class="card-text">
+								This blog was created to fulfill the assignment of the Information Technology Concept 
+								course which was taught by Mr. Fery Astika ST, M.Sc.
+							</p>
+						</div>
+					</div>
+					<br>
+					<!-- about blog end -->
+
+					<!-- newslater start -->
+					<div class="card" id="about">
+						<div class="card-body">
+							<h5 class="card-title">Signup for our newslater</h5>
+							<form>
+								<div class="input-group">
+									<input type="email" class="form-control" name="email" placeholder="Enter your email" aria-describedby="addon-left" required>
+									<button type="button" class="btn btn-dark">Signup</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- newslater end -->
+				</div>
+			</div>	
+		</div>
+	</section>
+	<br>
+	<!-- two side columns end -->
+
+	<!-- Contact Start -->
+	<section id="contact-me" style="padding-bottom: 70px;">
+		<div class="text-center mt-5">
+			<h2 class="logo text-center" data-aos="fade-up">Get In <span>Touch</span></h2>
+		</div>
+		<div class="form-area">
+			<div class="container">
+				<div class="row single-form g-0">
+					<div class="col-sm-12 col-lg-6">
+						<div class="left">
+							<h2><span>Contact Me for</span> <br>Business Enquies</h2>
+						</div>
+					</div>
+					<div class="col-sm-12 col-lg-6">
+						<div class="right">
+							<i class="fa fa-caret-left"></i>
+							<form>
+								<div class="mb-3">
+									<label for="exampleInputEmail1" class="form-label">Your Name</label>
+									<input type="text" class="form-control" id="exampleInputEmail1"
+										aria-describedby="emailHelp">
+								</div>
+								<div class="mb-3">
+									<label for="exampleInputEmail1" class="form-label">Email address</label>
+									<input type="email" class="form-control" id="exampleInputEmail1"
+										aria-describedby="emailHelp">
+								</div>
+								<div class="mb-3">
+									<label for="exampleInputPassword1" class="form-label">Message</label>
+									<textarea type="password" class="form-control" id="exampleInputPassword1"></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact End -->
+	
+	<!-- footer start -->
+	<footer class="text-center text-white" style="background-color: #141414;">
+		<!-- Grid container -->
+		<div class="container p-4 pb-0">
+			<!-- Section: Social media -->
+			<section class="mb-4" id="contact">
+				<!-- Twitter -->
+				<a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/nadiaalnd" role="button"><i
+						class="fa fa-twitter"></i></a>
+				<!-- Google -->
+				<a class="btn btn-outline-light btn-floating m-1" href="https://www.nadilaaulya.my.id/" role="button"><i
+						class="fa fa-google"></i></a>
+				<!-- Instagram -->
+				<a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/nadiaalnd/"
+					role="button"><i class="fa fa-instagram"></i></a>
+				<!-- Line -->
+				<a class="btn btn-outline-light btn-floating m-1" href="https://t.me/nadiaalnd" role="button"><i
+						class="fab fa-telegram"></i></a>
+			</section>
+		</div>
+		<!-- Grid container -->
+		<div class="text-center p-3" style="background-color: black;">
+			© 2022 Copyright
+			<a class="text-white" href="mailto:halo@nadilaaulya.my.id" style="text-decoration: none;">Nadila Aulya</a>
+		</div>
+	</footer>
+	<!-- footer end -->
+    
+    <!-- all js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

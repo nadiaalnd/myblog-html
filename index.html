@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+
+    <!-- all css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+		integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+		crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+		integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	
+	<style>
+		.logo {
+			color: black;
+			font-size: 35px;
+			letter-spacing: 1px;
+			cursor: pointer;
+		}
+		span{
+			color: #10B5BF;
+		}
+  		.col-md-4 {
+    		transition: transform 0.5s;
+  		}
+  		.col-md-4:hover {
+    		transform: scale(1.1);
+  		}
+	</style>
+</head>
+<body>
+	<!-- navigation start -->
+	<nav class="navbar navbar-expand-lg sticky-top navbar-dark shadow-sm" style="background: #000000;">
+		<div class="container">
+			<img src="img/logo.png" style="max-height: 45px;">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" 
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ms-auto">
+			  		<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#home">Home</a>
+			  		</li>
+			  		<li class="nav-item">
+						<a class="nav-link text-white" href="#about">About</a>
+			  		</li>
+					<li class="nav-item text">
+						<a class="nav-link text-white" href="#project">Project</a>
+					</li>
+			  		<li class="nav-item text">
+						<a class="nav-link text-white" href="#contact">Contact</a>
+			  		</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- navigation end -->
+
+	<div id="home">
+		<img src="img/home.png" alt="figure image" class="img-fluid" max-width="1920px" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+	</div>
+	<br>
+
+	<section class="container">
+		<!-- header start -->
+		<div class="container">
+			<!-- about section starts -->
+			<section class="about section-padding" id="about">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 col-md-12 col-12">
+							<img src="img/me.png" alt="" class="img-fluid" style="max-width: 260px; padding-top: 100px;" data-aos="zoom-in">
+						</div>
+						<div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+							<div class="about-text">
+								<h2 class="logo" data-aos="fade-up">Who <span>Am I?</span></h2>
+								<br>
+								<h4 class="card-title"><a href="mailto:halo@nadilaaulya.my.id" style="text-decoration: none; color: black;">Hello I'm 
+										Nadila, </a></h4>
+								<h5>Developer <span>& Designer</span></h5>
+								<p>I am an active semester 1 college from the Electronics Engineering Polytechnic
+									Institute of Surabaya majoring in Diploma-III Informatics Engineering. I have an
+									endless passion for software development, especially web development.
+									I have more than 5 months experience in exploring front-end developer, and I believe
+									my skills can compete with many people, and also a freelancer for several months.
+									Experienced starting from creating frontend, and also optimizing a website.
+									I'm a good learner and very enthusiastic and can learn anything as long as it is needed.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<br>
+			<!-- about section Ends -->
+		</div>
+		<br><br>
+		<!-- header end -->
+
+		<!-- portfolio strats -->
+		<section id="project">
+			<div class="container">
+				<h2 class="logo text-center" data-aos="fade-up">My <span>Projects</span></h2>
+				<p align="center" data-aos="fade-up">These are some of my latest projects</p>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 mt-5">
+							<div class="card" data-aos="fade-right">
+								<img alt="" src="img/project1.png" class="card-img-top"></img>
+								<div class="card-body" >
+									<h5 class="card-title">Web Profile</h5>
+									<p class="card-text">
+										The profile web that I made with HTML and CSS only
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mt-5">
+							<div class="card" data-aos="zoom-in">
+								<img alt="" src="img/project2.png" class="card-img-top"></img>
+								<div class="card-body">
+									<h5 class="card-title">Web Company</h5>
+									<p class="card-text">
+										Company web I made with HTML and bootstrap 4
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 mt-5">
+							<div class="card" data-aos="fade-left">
+								<img alt="" src="img/project3.jpg" class="card-img-top"></img>
+								<div class="card-body">
+									<h5 class="card-title">Web E-Commerce</h5>
+									<p class="card-text">
+										company website I made by slicing Figma to HTML
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<br><br>
+		</section>
+		<!-- portfolio ends -->
+
+		<!-- post start -->
+		<div data-aos="fade-up">
+			<h2 class="logo">Article that <span>I Wrote</span></h2>
+		</div>
+		<div class="list-group">
+			<a href="hosting.html" class="list-group-item list-group-item-action">
+				<div class="badge text-bg-secondary">Hosting</div>
+				<h5>Cara Hosting Dengan Cpanel</h5>
+				<p>Nadila Aulya (Nov 16, 2022 at 7:11 AM)</p>
+			</a>
+			<a href="java.html" class="list-group-item list-group-item-action">
+				<div class="badge text-bg-secondary">Coding</div>
+				<h5>Membuat Segitiga Bintang Javascript</h5>
+				<p>Nadila Aulya (Nov 16, 2022 at 7:11 AM)</p>
+			</a>
+			<a href="makalah.html" class="list-group-item list-group-item-action">
+				<div class="badge text-bg-secondary">Technology</div>
+				<h5>Dampak Teknologi Internet Pada Sektor Pertahanan dan Keamanan</h5>
+				<p>Nadila Aulya (Nov 16, 2022 at 7:11 AM)</p>
+			</a>
+		</div>
+		<br>
+		<!-- post end -->
+		
+		<!-- tag cloud start -->
+		<div class="card tag">
+			<div class="card-body">
+				<h5 class="card-title">Tag cloud</h5>
+				<a href="" class="badge text-bg-secondary">technology</a>
+				<a href="" class="badge text-bg-secondary">programming</a>
+				<a href="" class="badge text-bg-secondary">coding</a>
+				<a href="" class="badge text-bg-secondary">cyber</a>
+				<a href="" class="badge text-bg-secondary">hosting</a>
+				<a href="" class="badge text-bg-secondary">domain</a>
+				<a href="" class="badge text-bg-secondary">internet</a>
+				<a href="" class="badge text-bg-secondary">information</a>
+				<a href="" class="badge text-bg-secondary">shared hosting</a>
+				<a href="" class="badge text-bg-secondary">VPS hosting</a>
+				<a href="" class="badge text-bg-secondary">subdomain</a>
+				<a href="" class="badge text-bg-secondary">commuincation</a>
+			</div>
+		</div>
+		<br>
+		<!-- tag cloud end -->
+		
+		<!-- newslater start -->
+		<div class="card nws" id="about">
+			<div class="card-body">
+				<h5 class="card-title">Signup for our newslater</h5>
+				<form>
+					<div class="input-group">
+						<input type="email" class="form-control" name="email" placeholder="Enter your email"
+							aria-describedby="addon-left" required>
+						<button type="button" class="btn btn-dark">Signup</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- newslater end -->
+	</section>
+	<br>
+	<!-- two side columns end -->
+
+	<!-- Contact Start -->
+	<section id="contact-me" style="padding-bottom: 70px;">
+		<div class="text-center mt-5">
+			<h2 class="logo text-center" data-aos="fade-up">Get In <span>Touch</span></h2>
+		</div>
+		<div class="form-area">
+			<div class="container">
+				<div class="row single-form g-0">
+					<div class="col-sm-12 col-lg-6">
+						<div class="left">
+							<h2><span>Contact Me for</span> <br>Business Enquies</h2>
+						</div>
+					</div>
+					<div class="col-sm-12 col-lg-6">
+						<div class="right">
+							<i class="fa fa-caret-left"></i>
+							<form>
+								<div class="mb-3">
+									<label for="exampleInputEmail1" class="form-label">Your Name</label>
+									<input type="text" class="form-control" id="exampleInputEmail1"
+										aria-describedby="emailHelp">
+								</div>
+								<div class="mb-3">
+									<label for="exampleInputEmail1" class="form-label">Email address</label>
+									<input type="email" class="form-control" id="exampleInputEmail1"
+										aria-describedby="emailHelp">
+								</div>
+								<div class="mb-3">
+									<label for="exampleInputPassword1" class="form-label">Message</label>
+									<textarea type="password" class="form-control" id="exampleInputPassword1"></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact End -->
+
+	<!-- footer start -->
+	<footer class="text-center text-white" style="background-color: #141414;">
+		<!-- Grid container -->
+		<div class="container p-4 pb-0">
+			<!-- Section: Social media -->
+			<section class="mb-4" id="contact">
+				<!-- Twitter -->
+				<a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/nadiaalnd" role="button"><i
+						class="fa fa-twitter"></i></a>
+				<!-- Google -->
+				<a class="btn btn-outline-light btn-floating m-1" href="https://www.nadilaaulya.my.id/" role="button"><i
+						class="fa fa-google"></i></a>
+				<!-- Instagram -->
+				<a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/nadiaalnd/" role="button"><i
+						class="fa fa-instagram"></i></a>
+				<!-- Line -->
+				<a class="btn btn-outline-light btn-floating m-1" href="https://t.me/nadiaalnd" role="button"><i
+						class="fab fa-telegram"></i></a>
+			</section>
+		</div>
+		<!-- Grid container -->
+		<div class="text-center p-3" style="background-color: black;">
+		  © 2022 Copyright 
+		  <a class="text-white" href="mailto:halo@nadilaaulya.my.id" style="text-decoration: none;">Nadila Aulya</a>
+		</div>
+	  </footer>
+    <!-- footer end -->
+    
+    <!-- all js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" 
+		integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" 
+		crossorigin="anonymous"></script>
+
+	<!-- AOS -->
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+</body>
+</html>

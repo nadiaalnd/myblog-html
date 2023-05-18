@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gambar di JavaScript</title>
+
+    <!-- all css -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<!-- My CSS -->
+	<link rel="stylesheet" href="style.css">
+
+	<style>
+		.logo {
+			color: black;
+			font-size: 35px;
+			letter-spacing: 1px;
+			cursor: pointer;
+		}
+		span{
+			color: #10B5BF;
+		}
+		.box {
+			width: auto;
+			height: 190px;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<!-- navigation start -->
+	<nav class="navbar navbar-expand-lg sticky-top navbar-dark shadow-sm" style="background: #000000;">
+		<div class="container">
+			<img src="img/logo.png" style="max-height: 45px;">
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+				aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNavDropdown">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#home">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link text-white" href="#about">About</a>
+					</li>
+					<li class="nav-item text">
+						<a class="nav-link text-white" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- navigation end -->
+
+	<!-- two side columns start -->
+	<section class="container">
+		<div class="container">
+			<div class="row">
+				<!-- left side -->
+				<div class="col-md-9 mt-5">
+					<!-- header start -->
+					<article class="container">
+						<header>
+							<h1>Cara Membuat Segitiga Bintang Dengan Javascript</h1>
+							<div>Nadila Aulya</div>
+							<div>Posted on: Nov 16, 2022 at 12:45 AM</div>
+							<br>
+							<!-- badge -->
+							<div>
+								<a href="#" class="badge text-bg-dark">technology</a>
+								<a href="#" class="badge text-bg-dark">coding</a>
+								<a href="#" class="badge text-bg-dark">hosting</a>
+								<a href="#" class="badge text-bg-dark">cyber</a>
+							</div>
+						</header>
+
+						<!-- post start -->
+						<section>
+							<figure class="figure">
+								<img src="img/js.png" class="img-fluid">
+								<figcaption class="figure-caption">
+									<p>Javascript.</p>
+									<p>Photo by: Nadila Aulya</p>
+								</figcaption>
+							</figure>
+							<div class="article">
+								<p>
+									Pada artikel kali ini saya akan membahas bagaimana cara membuat segitiga bintang dengan menggunakan
+									JavaScript dengan menggunakan W3School. Terdapat beberapa pola yang sudah saya buat yang bisa kalian coba
+									sendiri.
+								</p>
+							</div>
+							<!-- first pattern start -->
+							<h5 class="logo">Segitiga Bintang <span>JavaScript</span></h5>
+							<img src="img/siku2.png" class="img-fluid" style="width: auto; height: auto;">
+							<figcaption class="figure-caption">
+								<p>Source Code Segitiga Bintang JavaScript</p>
+							</figcaption>
+							<br>
+
+							<h6>Output</h6>
+							<img src="img/sikuopt.png" class="img-fluid" style="width: auto; height: auto;">
+							<div class="article">
+								<blockquote class="blockquote">
+									<p>Penjelasan dan analisa dari program diatas adalah :
+									<ul>
+										<li>Menggunakan identifier const agar nilainya tidak bisa dirubah.</li>
+										<li>Membuat parameter baris, lalu kita buat pola yang isinya string kosong yang nanti akan kita isi dengan pola
+											bintang.</li>
+										<li>Loop yang pertama cetak baris, inisialisasi variabel i dengan nilai awal 0. Dengan syaratnya adalah variabel
+											i lebih
+											kecil dari baris maka program akan dijalankan dan akan di increament atau ditambah 1 sampai syarat
+											terpenuhi.</li>
+										<li>Mencetak karakter br yang berfungsi untuk ganti baris dan disimpan kedalam variabel pola.</li>
+										<li>Cetak bintang dengan memasukkan nested looping, dengan variabel j nilai awal 0, dengan kondisi selama j
+											lebih kecil
+											sama dengan i, kita tambahkan 1 atau di increament.</li>
+										<li>Maka program akan dijalankan dan akan di increament sampai syarat terpenuhi dan mecetak pola dengan karakter
+											* dan
+											disimpan ke dalam variabel pola.</li>
+									</ul>
+									</p>
+								</blockquote>
+							</div>
+							<br>
+							<!-- first pattern end -->
+
+							<!-- second pattern start -->
+							<h5 class="logo">Segitiga Bintang <span>Terbalik JavaScript</span></h5>
+							<img src="img/sikuflip.png" class="img-fluid" style="width: auto; height: auto;">
+							<figcaption class="figure-caption">
+								<p>Source Code Segitiga Bintang JavaScript</p>
+							</figcaption>
+							<br>
+							
+							<h6>Output</h6>
+							<img src="img/sikuflipopt.png" class="img-fluid" style="width: auto; height: auto;">
+							<figcaption class="figure-caption">
+								<p>Output Segitiga Bintang JavaScript</p>
+							</figcaption>
+							<div class="article">
+								<blockquote class="blockquote">
+									<p>Penjelasan dan analisa dari program diatas
+										Secara konsep untuk program diatas dan program ini kurang lebih sama namun yang membedakan ialah pada operator
+										yang digunakan, yakni :
+									<ul>
+										<li>Menggunakan identifier const agar nilainya tidak bisa dirubah.</li>
+										<li>Membuat parameter baris, lalu kita buat pola yang isinya string kosong yang nanti akan kita isi dengan pola
+											bintang.</li>
+										<li>Loop yang pertama cetak baris, inisialisasi variabel i dengan nilai awal 0. Dan syaratnya adalah variabel i
+											lebih
+											kecil dari baris maka program akan dijalankan dan akan di increament atau ditambah 1 sampai syarat
+											terpenuhi.</li>
+										<li>Mencetak karakter br yang berfungsi untuk ganti baris dan disimpan kedalam variabel pola.</li>
+										<li>Cetak bintang dengan memasukkan looping didalam looping atau nested loop, dengan variabel j nilai awal
+											baris, kalau
+											kita masukkan nilai 10 pada variabel baris maka, nilai awalnya adalah 10.</li>
+										<li>Kondisinya j lebih lebih besar dari i maka, kita <i>decreament</i> yang kemudian nilai j akan dikurangi 1
+											tiap iterasinya.</li>
+										<li>Nilai j yang kita masukkan adalah 10 maka,
+											nilai j = 10 dan nilai i = 0, berarti 10 lebih besar dari 1 dan true pola bintang akan dicetak,kemudian,
+											iterasi kedua
+											nilai i berubah menjadi 1 dan kita mulai dari awal begitu seterusnya.</li>
+										<li>Maka program akan dijalankan dan akan di <i>decreament</i> sampai syarat terpenuhi dan mecetak pola dengan
+											karakter * dan
+											disimpan ke dalam variabel pola.</li>
+									</ul>
+									</p>
+								</blockquote>
+							</div>
+							<br>
+							<!-- second pattern end -->
+
+							<!-- third pattern start -->
+							<h5 class="logo">Bujur Sangkar <span>Bintang JavaScript</span></h5>
+							<img src="img/square.png" class="img-fluid" style="width: auto; height: auto;">
+							<figcaption class="figure-caption">
+								<p>Source Code Segitiga Bintang JavaScript</p>
+							</figcaption>
+							<br>
+							
+							<h6>Output</h6>
+							<img src="img/squareopt.png" class="img-fluid" style="width: auto; height: auto;">
+							<figcaption class="figure-caption">
+								<p>Output Segitiga Bintang JavaScript</p>
+							</figcaption>
+							<div class="article">
+								<blockquote class="blockquote">
+									<p>Penjelasan dan analisa dari program diatas adalah :
+									<ul>
+										<li>Menggunakan identifier const agar nilainya tidak bisa dirubah.</li>
+										<li>Membuat parameter baris, lalu kita buat pola yang isinya string kosong yang nanti akan kita isi dengan pola
+											bintang.</li>
+										<li>Loop yang pertama cetak baris, inisialisasi variabel i dengan nilai awal 0. Dan syaratnya adalah variabel i
+											lebih
+											kecil atau sama dengan dari baris maka program akan dijalankan dan akan di increament atau ditambah 1 sampai
+											syarat
+											terpenuhi.</li>
+										<li>for yang pertama dengan variabel i untuk menampilkan baris sedangkan perulangan for dengan variabel j untuk
+											menampilkan kolom.</li>
+										<li>Loop yang kedua kita buat sama karena kita akan membuat kolom 10x10.</li>
+										<li>for berniali i akan memproses perulangan didalamnya yaitu variabel j. Program akan membuat baris pertama
+											apabila
+											perulangan for pada variabel j selesai.</li>
+										<li>Jika looping pada variabel i dan variabel j bernilai true maka program akan melakukan print pada bintang
+											pertama
+											kolom
+											1 baris 1, karna masih bernilai true maka program akan terus berjalan dan melakukan print lagi untuk
+											variabel j
+											yang
+											bernilai 2 dan seterusnya hingga syarat terpenuhi.</li>
+										<li>Maka jika input yang dimasukkan 10, 11 tidak lebih kecil sama dengan 10 menjadi false dan langsung
+											melaksanakan
+											program bawahnya atau membuat baris baru.</li>
+										<li>Mencetak karakter br yang berfungsi untuk ganti baris dan disimpan kedalam variabel pola.</li>
+										<li>Dengan demikian program akan dijalankan dan akan di increament sampai syarat terpenuhi dan mecetak pola
+											dengan
+											karakter * dan disimpan ke dalam variabel pola.</li>
+									</ul>
+									</p>
+								</blockquote>
+							</div>
+							<br>
+							<!-- third pattern end -->
+						</section>
+						<!-- post end -->
+					</article>
+					<!-- header end -->
+				</div>
+
+				<!-- right side -->
+				<div class="col-md-3 mt-5">
+					<div class="box"></div>
+					<!-- author start -->
+					<h2>About the Author</h2>
+					<div class="card" id="about">
+						<div class="card-body text-center">
+							<img src="img/me.png" alt="Figure image" class="img-fluid" style="max-width: 150px;">
+							<h5 class="card-title"><a href="mailto:halo@nadilaaulya.my.id" 
+								style="text-decoration: none; color: black;">Nadila Aulya Salsabila Mirdianti</a></h5>
+							<p class="card-text">
+								I am an active semester 1 college from the Electronics Engineering Polytechnic
+								Institute of Surabaya majoring in Diploma-III Informatics Engineering.
+							</p>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card_body" align="center">
+							<div class="card-text">
+								<ul class="list-inline">
+									<li class="list-inline-item small">1 D3 IT A</li>
+									<li class="list-inline-item small">3122500002</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<br>
+					<!-- author end -->
+
+					<!-- post start -->
+					<h2>Another Article</h2>
+					<div class="list-group">
+						<a href="index.html" class="list-group-item list-group-item-action">
+							<div class="badge text-bg-secondary">About My Blog</div>
+							<h5>The Reason Why I create My Personal Blog</h5>
+							<p>Nadila Aulya (Nov 16, 2022 at 12:45 AM)</p>
+						</a>
+						<a href="hosting.html" class="list-group-item list-group-item-action">
+							<div class="badge text-bg-secondary">Hosting</div>
+							<h5>Cara Hosting Dengan Cpanel</h5>
+							<p>Nadila Aulya (Nov 16, 2022 at 7:11 AM)</p>
+						</a>
+						<a href="makalah.html" class="list-group-item list-group-item-action">
+							<div class="badge text-bg-secondary">Technology</div>
+							<h5>Dampak Teknologi Internet Pada Sektor Pertahanan dan Keamanan</h5>
+							<p>Nadila Aulya (Nov 16, 2022 at 7:11 AM)</p>
+						</a>
+					</div>
+					<br>
+					<!-- post end -->
+
+					<!-- tag cloud start -->
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Tag cloud</h5>
+							<a href="" class="badge text-bg-secondary">technology</a>
+							<a href="" class="badge text-bg-secondary">programming</a>
+							<a href="" class="badge text-bg-secondary">coding</a>
+							<a href="" class="badge text-bg-secondary">cyber</a>
+							<a href="" class="badge text-bg-secondary">hosting</a>
+							<a href="" class="badge text-bg-secondary">domain</a>
+							<a href="" class="badge text-bg-secondary">internet</a>
+							<a href="" class="badge text-bg-secondary">information</a>
+							<a href="" class="badge text-bg-secondary">shared hosting</a>
+							<a href="" class="badge text-bg-secondary">VPS hosting</a>
+							<a href="" class="badge text-bg-secondary">subdomain</a>
+							<a href="" class="badge text-bg-secondary">commuincation</a>
+						</div>
+					</div>
+					<br>
+					<!-- tag cloud end -->
+
+					<!-- about blog start -->
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">About this blog</h5>
+							<p class="card-text">
+								This blog was created to fulfill the assignment of the Information Technology Concept 
+								course which was taught by Mr. Fery Astika ST, M.Sc.
+							</p>
+						</div>
+					</div>
+					<br>
+					<!-- about blog end -->
+
+					<!-- newslater start -->
+					<div class="card" id="about">
+						<div class="card-body">
+							<h5 class="card-title">Signup for our newslater</h5>
+							<form>
+								<div class="input-group">
+									<input type="email" class="form-control" name="email" placeholder="Enter your email" aria-describedby="addon-left" required>
+									<button type="button" class="btn btn-dark">Signup</button>
+								</div>
+							</form>
+						</div>
+					</div>
+					<!-- newslater end -->
+				</div>
+			</div>	
+		</div>
+	</section>
+	<br>
+	<!-- two side columns end -->
+
+	<!-- Contact Start -->
+	<section id="contact-me" style="padding-bottom: 70px;">
+		<div class="text-center mt-5">
+			<h2 class="logo text-center" data-aos="fade-up">Get In <span>Touch</span></h2>
+		</div>
+		<div class="form-area">
+			<div class="container">
+				<div class="row single-form g-0">
+					<div class="col-sm-12 col-lg-6">
+						<div class="left">
+							<h2><span>Contact Me for</span> <br>Business Enquies</h2>
+						</div>
+					</div>
+					<div class="col-sm-12 col-lg-6">
+						<div class="right">
+							<i class="fa fa-caret-left"></i>
+							<form>
+								<div class="mb-3">
+									<label for="exampleInputEmail1" class="form-label">Your Name</label>
+									<input type="text" class="form-control" id="exampleInputEmail1"
+										aria-describedby="emailHelp">
+								</div>
+								<div class="mb-3">
+									<label for="exampleInputEmail1" class="form-label">Email address</label>
+									<input type="email" class="form-control" id="exampleInputEmail1"
+										aria-describedby="emailHelp">
+								</div>
+								<div class="mb-3">
+									<label for="exampleInputPassword1" class="form-label">Message</label>
+									<textarea type="password" class="form-control" id="exampleInputPassword1"></textarea>
+								</div>
+								<button type="submit" class="btn btn-primary">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Contact End -->
+	
+	<!-- footer start -->
+	<footer class="text-center text-white" style="background-color: #141414;">
+		<!-- Grid container -->
+		<div class="container p-4 pb-0">
+			<!-- Section: Social media -->
+			<section class="mb-4" id="contact">
+				<!-- Twitter -->
+				<a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/nadiaalnd" role="button"><i
+						class="fa fa-twitter"></i></a>
+				<!-- Google -->
+				<a class="btn btn-outline-light btn-floating m-1" href="https://www.nadilaaulya.my.id/" role="button"><i
+						class="fa fa-google"></i></a>
+				<!-- Instagram -->
+				<a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/nadiaalnd/"
+					role="button"><i class="fa fa-instagram"></i></a>
+				<!-- Line -->
+				<a class="btn btn-outline-light btn-floating m-1" href="https://t.me/nadiaalnd" role="button"><i
+						class="fab fa-telegram"></i></a>
+			</section>
+		</div>
+		<!-- Grid container -->
+		<div class="text-center p-3" style="background-color: black;">
+			© 2022 Copyright
+			<a class="text-white" href="mailto:halo@nadilaaulya.my.id" style="text-decoration: none;">Nadila Aulya</a>
+		</div>
+	</footer>
+	<!-- footer end -->
+    
+    <!-- all js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
